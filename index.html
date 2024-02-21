@@ -30,9 +30,210 @@
 
 <body>
     <Header>
-
+        <!-- navbar section  -->
+        <div class="navbar bg-base-100 px-16 py-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="text-4xl font-raleway font-extrabold">Ruch Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="btn rounded-xl border-2 border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100] text-xl px-8 font-raleway font-bold">Bus
+                    <img src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
     </Header>
     <main>
+        <!-- banner section started -->
+        <div class="hero px-16 w-auto rounded-3xl bg-gradient-to-t[#030712]">
+            <div class="hero-overlay items-center rounded-3xl"><img class="w-full opacity-95" src="images/banner.png"
+                    alt=""></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-">
+                    <h1 class="mb-5 text-6xl text-white font-bold font-raleway ">End-to-End Travel with <br><span
+                            class="text-[#1DD100]">Ruch Paribahan</span></h1>
+                    <p class="mb-5 font-inter text-xl">From planning your itinerary to reaching your destination, we
+                        ensure a hassle-free
+                        experience. <br>Trust Ruch Paribahan to take you on unforgettable journeys, leaving you with
+                        cherished memories.</p>
+                    <button class="btn border-none bg-[#1DD100] font-raleway text-xl text-black font-bold px-7">Buy
+                        Tickets</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex px-48 justify-between absolute -bottom-28 gap-16">
+            <div class="flex border-2 bg-white items-center pl-10 pr-10 pt-8 pb-8 rounded-2xl border-b-[#1DD100] w-80">
+                <div>
+                    <img src="images/people.png" alt="">
+                </div>
+                <div class="pl-2">
+                    <h1 class="font-inter font-bold text-4xl ">500K+</h1>
+                    <h1 class="font-inter font-semibold text-xl text-[#03071299]">Registered users</h1>
+                </div>
+            </div>
+            <div class="flex border-2 bg-white items-center pl-10 pr-10 pt-8 pb-8 rounded-2xl border-b-[#1DD100] w-80">
+                <div>
+                    <img src="images/ticket-cupon.png" alt="">
+                </div>
+                <div class="pl-2">
+                    <h1 class="font-inter font-bold text-4xl ">1.7 lacks</h1>
+                    <h1 class="font-inter font-semibold text-xl text-[#03071299]">Tickets sold</h1>
+                </div>
+            </div>
+            <div class="flex border-2 bg-white items-center pl-10 pr-10 pt-8 pb-8 rounded-2xl border-b-[#1DD100] w-80">
+                <div>
+                    <img src="images/stoppage.png" alt="">
+                </div>
+                <div class="pl-2">
+                    <h1 class="font-inter font-bold text-4xl ">80K+</h1>
+                    <h1 class="font-inter font-semibold text-xl text-[#03071299]">Rental partners</h1>
+                </div>
+            </div>
+        </div>
+        <!-- banner section ended -->
+
+        <!-- coupon section started -->
+        <div class="mt-40 items-center px-16 align-middle mb-32">
+            <h1 class="font-raleway font-bold text-4xl text-center">Best offers for you</h1>
+
+            <!-- coupons -->
+            <div class="mt-12 flex gap-10 px-24 mb-16">
+                <!-- coupon 1 -->
+                <div class="bg-[#FFBF0F] flex h-56 w-[573px] rounded-3xl">
+                    <div class="ml-14 mr-12 mt-16 mb-16">
+                        <h1 class="font-inter text-5xl font-extrabold text-[#030712CC]">15% OFF</h1>
+                        <h1 class="font-inter text-xl font-bold text-[#030712CC]">on your next purchase</h1>
+                        <h1 class="font-inter text-xs text-[#0307127F]">use by February 2024</h1>
+                    </div>
+                    <div>
+                        <img class="h-56" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="mt-20 mb-16 ml-6 mr-12">
+                        <h1 class="font-raleway font-bold text-3xl text-[#030712]">NEW15</h1>
+                        <h1 class="font-raleway text-xl text-[#03071266]">Coupon Code</h1>
+                    </div>
+                </div>
+                <!-- coupon 2 -->
+                <div class="bg-[#F78C9C] flex h-56 w-[573px] rounded-3xl">
+                    <div class="ml-14 mr-1 mt-16 mb-16">
+                        <h1 class="font-inter text-5xl font-extrabold text-[#030712CC]">20% OFF</h1>
+                        <h1 class="font-inter text-xl font-bold text-[#030712CC]">on your next purchase</h1>
+                        <h1 class="font-inter text-xs text-[#0307127F]">use by February 2024</h1>
+                    </div>
+                    <div>
+                        <img class="h-56" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="mt-20 mb-16 ml-6 mr-12">
+                        <h1 class="font-raleway font-bold text-3xl text-[#030712]">Couple 20</h1>
+                        <h1 class="font-raleway text-xl text-[#03071266]">Coupon Code</h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="align-middle m-auto items-center justify-center flex">
+                <button
+                    class="btn btn-outline btn-success btn-[#1DD100] border-[#1DD100] text-[#1DD100] font-raleway text-xl font-bold">See
+                    All Offers</button>
+            </div>
+        </div>
+        <!-- coupon section ended -->
+
+        <!-- ticket section started -->
+        <div class="rounded-t-3xl bg-[#F7F8F8] border-t-4 border-t-[#1DD100]">
+            <!-- ticket title -->
+            <div class="mt-32 mb-12">
+                <h1 class="font-raleway font-bold text-5xl text-[#030712] mb-6 text-center">Hawa Paribahan</h1>
+                <h1 class="font-inter text-xs w-[736px] mx-auto text-[#03071299] text-center">With a fleet of modern
+                    vehicles and experienced drivers, we offer convenient routes to destinations
+                    near and far. Whether you're commuting to work, traveling with family, or embarking on a new
+                    adventure, count on us to get you there efficiently and affordably.</h1>
+            </div>
+
+            <!-- bus details -->
+            <div class="px-24">
+                <div class="bg-[#FFFFFF] flex h-[418px] rounded-3xl">
+                    <!-- bus -->
+                    <div class="flex flex-col w-[872px]">
+                        <div class="flex m-8">
+                            <div class="mr-4">
+                                <img src="images/bus-logo.png" alt="">
+                            </div>
+                            <div class="mr-56">
+                                <h1 class="font-raleway font-bold text-3xl text-[#030712]">Hawa Paribahan</h1>
+                                <h1 class="font-inter font-bold text-xs text-[#03071299]">Coach-009-WEB ! AC_Business</h1>
+                            </div>
+                            <div class="bg-[#1DD10026] rounded-2xl flex h-14 w-48 px-4 py-4 ml-16">
+                                <div><img class="mr-2" src="images/seat-green.png" alt=""></div>
+                                <h1 class="font-inter font-bold text-[18px] text-[#1DD100]">40 Seats left</h1>
+                            </div>
+                        </div>
+                        <!-- route details  -->
+                        <div class="bg-[#F7F8F8] rounded-3xl mx-8">
+                            <!-- route  -->
+                            <div class="flex justify-between mx-8 mb-6 mt-8">
+                                <h1 class="font-raleway text-[18px] font-semibold text-[#03071299]">Route</h1>
+                                <h1 class="font-raleway text-[18px] font-bold text-[#030712]">Dhaka - Sylhet</h1>
+                            </div>
+                            <hr class="mx-8 mb-6 border-dashed bg-[#03071233]">
+                            <!-- time -->
+                            <div class="flex justify-between mx-8 mb-6 mt-8">
+                                <h1 class="font-raleway text-[18px] font-semibold text-[#03071299]">Departure Time</h1>
+                                <h1 class="font-raleway text-[18px] font-bold text-[#030712]">9:00 PM</h1>
+                            </div>
+                            <hr class="mx-8 mb-6 border-dashed bg-[#03071233]">
+                            <!-- route details  -->
+                            <div class="flex justify-between mx-8 mb-8">
+                                <div class="bg-[#0307120D] rounded-xl h-14 w-[200px] p-5">
+                                    <h1 class="text-center font-inter text-xs text-[#030712CC] font-bold">Boarding Point - Fakirarpul</h1>
+                                </div>
+                                <div class="bg-[#0307120D] rounded-xl h-14 w-[200px] p-5">
+                                    <h1 class="text-center font-inter text-xs text-[#030712CC] font-bold">Dropping Point - Sylhet</h1>
+                                </div>
+                                <div class="bg-[#0307120D] rounded-xl h-14 w-[200px] p-5">
+                                    <h1 class="text-center font-inter text-xs text-[#030712CC] font-bold">Est. Time - 11 Hour</h1>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="h-auto" src="images/info-devider.png" alt="">
+                    </div>
+                    <div class="w-56 mt-36 mb-36 ml-12 mr-12">
+                        <div class="mx-12 mb-7"><img class="text-center" src="images/fare.png" alt=""></div>
+                        <h1 class=" ml-6 font-raleway font-bold text-3xl text-[#030712]">550 Taka</h1>
+                        <h1 class=" ml-6 font-raleway text-xl text-[#03071299]">Per Seat</h1>
+                    </div>
+                </div>
+
+            </div>
+
+
+
 
     </main>
     <footer>
