@@ -59,9 +59,9 @@
                     <li><a>Search</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
+            <div id="targetSectionNav" class="navbar-end">
                 <a
-                    class="btn rounded-xl border-2 border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100] text-xl px-8 font-raleway font-bold">Bus
+                class="btn rounded-xl border-2 border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100] text-xl px-8 font-raleway font-bold">Bus
                     <img src="images/bus-icon.png" alt=""></a>
             </div>
         </div>
@@ -79,7 +79,7 @@
                         ensure a hassle-free
                         experience. <br>Trust Ruch Paribahan to take you on unforgettable journeys, leaving you with
                         cherished memories.</p>
-                    <button class="btn border-none bg-[#1DD100] font-raleway text-xl text-black font-bold px-7">Buy
+                    <button onclick="scrollToSection()" class="btn border-none bg-[#1DD100] font-raleway text-xl text-black font-bold px-7">Buy
                         Tickets</button>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                         <img class="h-56" src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="mt-20 mb-16 ml-6 mr-12">
-                        <h1 class="font-raleway font-bold text-3xl text-[#030712]">NEW15</h1>
+                        <h1 id="copyText" style="cursor: pointer;" " class="font-raleway font-bold text-3xl text-[#030712]">NEW15</h1>
                         <h1 class="font-raleway text-xl text-[#03071266]">Coupon Code</h1>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                         <img class="h-56" src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="mt-20 mb-16 ml-6 mr-12">
-                        <h1 class="font-raleway font-bold text-3xl text-[#030712]">Couple 20</h1>
+                        <h1 id="couple" style="cursor: pointer;" class="font-raleway font-bold text-3xl text-[#030712]">Couple 20</h1>
                         <h1 class="font-raleway text-xl text-[#03071266]">Coupon Code</h1>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
         <!-- coupon section ended -->
 
         <!-- ticket section started -->
-        <div class="rounded-t-3xl bg-[#F7F8F8] border-t-4 border-t-[#1DD100] pb-32">
+        <div id="targetSection" class="rounded-t-3xl bg-[#F7F8F8] border-t-4 border-t-[#1DD100] pb-32">
             <!-- ticket title -->
             <div class="mt-32 mb-12">
                 <h1 class="font-raleway font-bold text-5xl text-[#030712] mb-6 text-center">Hawa Paribahan</h1>
@@ -565,7 +565,7 @@
 
         </footer>
     </footer>
-
+<script src="scripts/couponcopy.js"></script>
 </body>
 
 </html>
