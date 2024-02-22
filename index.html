@@ -61,7 +61,7 @@
             </div>
             <div id="targetSectionNav" class="navbar-end">
                 <a
-                class="btn rounded-xl border-2 border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100] text-xl px-8 font-raleway font-bold">Bus
+                    class="btn rounded-xl border-2 border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100] text-xl px-8 font-raleway font-bold">Bus
                     <img src="images/bus-icon.png" alt=""></a>
             </div>
         </div>
@@ -79,7 +79,8 @@
                         ensure a hassle-free
                         experience. <br>Trust Ruch Paribahan to take you on unforgettable journeys, leaving you with
                         cherished memories.</p>
-                    <button onclick="scrollToSection()" class="btn border-none bg-[#1DD100] font-raleway text-xl text-black font-bold px-7">Buy
+                    <button onclick="scrollToSection()"
+                        class="btn border-none bg-[#1DD100] font-raleway text-xl text-black font-bold px-7">Buy
                         Tickets</button>
                 </div>
             </div>
@@ -132,7 +133,8 @@
                         <img class="h-56" src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="mt-20 mb-16 ml-6 mr-12">
-                        <h1 id="copyText" style="cursor: pointer;" " class="font-raleway font-bold text-3xl text-[#030712]">NEW15</h1>
+                        <h1 id="copyText" style="cursor: pointer;" " class=" font-raleway font-bold text-3xl
+                            text-[#030712]">NEW15</h1>
                         <h1 class="font-raleway text-xl text-[#03071266]">Coupon Code</h1>
                     </div>
                 </div>
@@ -147,7 +149,8 @@
                         <img class="h-56" src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="mt-20 mb-16 ml-6 mr-12">
-                        <h1 id="couple" style="cursor: pointer;" class="font-raleway font-bold text-3xl text-[#030712]">Couple 20</h1>
+                        <h1 id="couple" style="cursor: pointer;" class="font-raleway font-bold text-3xl text-[#030712]">
+                            Couple 20</h1>
                         <h1 class="font-raleway text-xl text-[#03071266]">Coupon Code</h1>
                     </div>
                 </div>
@@ -189,7 +192,8 @@
                             </div>
                             <div class="bg-[#1DD10026] rounded-2xl flex h-14 w-48 px-4 py-4 ml-16">
                                 <div><img class="mr-2" src="images/seat-green.png" alt=""></div>
-                                <h1 class="font-inter font-bold text-[18px] text-[#1DD100]">40 Seats left</h1>
+                                <h1 class="font-inter font-bold text-[18px] text-[#1DD100]"><span
+                                        id="remainingSeat">40</span> Seats left</h1>
                             </div>
                         </div>
                         <!-- route details  -->
@@ -237,9 +241,9 @@
                 <!-- bus info ended -->
 
                 <!-- bus seat started -->
-                <div class="px-24 bg-[#FFFFFF] h-[1155px] rounded-3xl flex gap-16">
+                <div class="px-24 bg-[#FFFFFF] h-[1255px] rounded-3xl flex gap-16">
                     <!-- Seat -->
-                    <div class="mt-8 mb-8 w-[650px]">
+                    <div class="mt-8 mb-8 w-[650px]  border-r-2 border-dashed border-[#0307124D]">
                         <!-- seat description -->
                         <div>
                             <h1 class="pt-8 mb-6 font-raleway font-bold text-2xl text-[#030712]">Select Your Seat</h1>
@@ -270,167 +274,206 @@
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">A</h1>
                             <!-- a1 Seat -->
-                            <button
+                            <button id="A1" onclick="handleButtonClick('A1')" data-name="A1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">A1</button>
                             <!-- a2 Seat -->
-                            <button
+                            <button id="A2" onclick="handleButtonClick('A2')" data-name="A2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">A2</button>
                             <!-- a3 Seat -->
-                            <button
+                            <button id="A3" onclick="handleButtonClick('A3')" data-name="A3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">A3</button>
                             <!-- a4 Seat -->
-                            <button
+                            <button id="A4" onclick="handleButtonClick('A4')" data-name="A4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">A4</button>
                         </div>
                         <!-- b row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">B</h1>
                             <!-- b1 Seat -->
-                            <button
+                            <button id="B1" onclick="handleButtonClick('B1')" data-name="B1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">B1</button>
                             <!-- b2 Seat -->
-                            <button
+                            <button id="B2" onclick="handleButtonClick('B2')" data-name="B2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">B2</button>
                             <!-- b3 Seat -->
-                            <button
+                            <button id="B3" onclick="handleButtonClick('B3')" data-name="B3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">B3</button>
                             <!-- b4 Seat -->
-                            <button
+                            <button id="B4" onclick="handleButtonClick('B4')" data-name="B4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">B4</button>
                         </div>
                         <!-- c row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">C</h1>
                             <!-- c1 Seat -->
-                            <button
+                            <button id="C1" onclick="handleButtonClick('C1')" data-name="C1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">C1</button>
                             <!-- c2 Seat -->
-                            <button
+                            <button id="C2" onclick="handleButtonClick('C2')" data-name="C2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">C2</button>
                             <!-- c3 Seat -->
-                            <button
+                            <button id="C3" onclick="handleButtonClick('C3')" data-name="C3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">C3</button>
                             <!-- c4 Seat -->
-                            <button
+                            <button id="C4" onclick="handleButtonClick('C4')" data-name="C4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">C4</button>
                         </div>
                         <!-- d row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">D</h1>
                             <!-- d1 Seat -->
-                            <button
+                            <button id="D1" onclick="handleButtonClick('D1')" data-name="D1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">D1</button>
                             <!-- d2 Seat -->
-                            <button
+                            <button id="D2" onclick="handleButtonClick('D2')" data-name="D2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">D2</button>
                             <!-- d3 Seat -->
-                            <button
+                            <button id="D3" onclick="handleButtonClick('D3')" data-name="D3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">D3</button>
                             <!-- d4 Seat -->
-                            <button
+                            <button id="D4" onclick="handleButtonClick('D4')" data-name="D4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">D4</button>
                         </div>
                         <!-- e row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">E</h1>
                             <!-- e1 Seat -->
-                            <button
+                            <button id="E1" onclick="handleButtonClick('E1')" data-name="E1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">E1</button>
                             <!-- e2 Seat -->
-                            <button
+                            <button id="E2" onclick="handleButtonClick('E2')" data-name="E2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">E2</button>
                             <!-- e3 Seat -->
-                            <button
+                            <button id="E3" onclick="handleButtonClick('E3')" data-name="E3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">E3</button>
                             <!-- e4 Seat -->
-                            <button
+                            <button id="E4" onclick="handleButtonClick('E4')" data-name="E4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">E4</button>
                         </div>
                         <!-- f row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">F</h1>
                             <!-- f1 Seat -->
-                            <button
+                            <button id="F1" onclick="handleButtonClick('F1')" data-name="F1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">F1</button>
                             <!-- f2 Seat -->
-                            <button
+                            <button id="F2" onclick="handleButtonClick('F2')" data-name="F2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">F2</button>
                             <!-- f3 Seat -->
-                            <button
+                            <button id="F3" onclick="handleButtonClick('F3')" data-name="F3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">F3</button>
                             <!-- f4 Seat -->
-                            <button
+                            <button id="F4" onclick="handleButtonClick('F4')" data-name="F4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">f4</button>
                         </div>
                         <!-- g row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">G</h1>
                             <!-- g1 Seat -->
-                            <button
+                            <button id="G1" onclick="handleButtonClick('G1')" data-name="G1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">G1</button>
                             <!-- g2 Seat -->
-                            <button
+                            <button id="G2" onclick="handleButtonClick('G2')" data-name="G2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">G2</button>
                             <!-- g3 Seat -->
-                            <button
+                            <button id="G3" onclick="handleButtonClick('G3')" data-name="G3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">G3</button>
                             <!-- g4 Seat -->
-                            <button
+                            <button id="G4" onclick="handleButtonClick('G4')" data-name="G4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">G4</button>
                         </div>
                         <!-- h row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">H</h1>
                             <!-- h1 Seat -->
-                            <button
+                            <button id="H1" onclick="handleButtonClick('H1')" data-name="H1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">H1</button>
                             <!-- h2 Seat -->
-                            <button
+                            <button id="H2" onclick="handleButtonClick('H2')" data-name="H2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">H2</button>
                             <!-- h3 Seat -->
-                            <button
+                            <button id="H3" onclick="handleButtonClick('H3')" data-name="H3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">H3</button>
                             <!-- h4 Seat -->
-                            <button
+                            <button id="H4" onclick="handleButtonClick('H4')" data-name="H4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">H4</button>
                         </div>
                         <!-- i row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">I</h1>
                             <!-- i1 Seat -->
-                            <button
+                            <button id="I1" onclick="handleButtonClick('I1')" data-name="I1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">I1</button>
                             <!-- i2 Seat -->
-                            <button
+                            <button id="I2" onclick="handleButtonClick('I2')" data-name="I2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">I2</button>
                             <!-- i3 Seat -->
-                            <button
+                            <button id="I3" onclick="handleButtonClick('I3')" data-name="I3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">I3</button>
                             <!-- i4 Seat -->
-                            <button
+                            <button id="I4" onclick="handleButtonClick('I4')" data-name="I4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">I4</button>
                         </div>
                         <!-- j row Seat -->
                         <div class="flex">
                             <h1 class="font-inter text-xl mr-4 mt-4 mb-4 text-[#03071280]">J</h1>
                             <!-- j1 Seat -->
-                            <button
+                            <button id="J1" onclick="handleButtonClick('J1')" data-name="J1" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">J1</button>
                             <!-- j2 Seat -->
-                            <button
+                            <button id="J2" onclick="handleButtonClick('J2')" data-name="J2" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-24 mb-6">J2</button>
                             <!-- j3 Seat -->
-                            <button
+                            <button id="J3" onclick="handleButtonClick('J3')" data-name="J3" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-8 mb-6">J3</button>
                             <!-- j4 Seat -->
-                            <button
+                            <button id="J4" onclick="handleButtonClick('J4')" data-name="J4" data-class="Economy"
+                                data-price="550"
                                 class="btn font-inter text-xl bg-[#F7F8F8] text-[#03071280] w-28 h-14 mr-4 mb-6">J4</button>
                         </div>
 
                     </div>
-                    <!-- <div>
-                        <img src="images/hr lomba.png" alt="">
-                    </div> -->
+                    <!-- seat ended -->
+
                     <!-- Price -->
                     <div class="mt-8 mb-8 w-[480px]">
                         <!-- seat description -->
@@ -439,11 +482,11 @@
                             <hr class="mb-6 border-dashed w-[409px] bg-[#03071233]">
                         </div>
                         <!-- price count section  -->
-                        <div class="h-[360px] w-[410px] bg-[#F7F8F8] rounded-3xl mb-6">
+                        <div class="h-[460px] w-[410px] bg-[#F7F8F8] rounded-3xl mb-6">
                             <!-- title  -->
                             <div class="mt-8 ml-8 flex gap-1 mb-4">
                                 <h1 class="pt-8 font-inter font-bold text-xl text-[#030712]">Seat</h1>
-                                <h1
+                                <h1 id="clickCount"
                                     class=" rounded-3xl w-6 mt-9 h-4 font-inter font-bold text-xs text-center text-white bg-[#1DD100]">
                                     0</h1>
                                 <h1 class="pt-8 ml-20 font-inter font-bold text-xl text-[#030712]">Class</h1>
@@ -451,31 +494,37 @@
                             </div>
                             <hr class="mb-4 ml-6 border-dashed w-[369px] bg-[#03071233]">
                             <!-- ticket class description  -->
-                            <div class="ml-8 flex gap-1 mb-4">
-                                <h1 class="font-inter text-xl text-[#03071299]">C2</h1>
-                                <h1 class="ml-20 font-inter text-xl text-[#03071299]">Economoy</h1>
-                                <h1 class="ml-20 font-inter text-xl text-[#03071299]">550</h1>
+                            <div class="-ml-4 flex flex-col gap-1 mb-4">
+                                <span id="infoDiv" class="ml-20 font-inter text-xl text-[#03071299]"></span>
+                                <span id="infoDiv2" class="ml-20 font-inter text-xl text-[#03071299]"></span>
+
                             </div>
                             <hr class="mb-4 ml-6 border-dashed w-[369px] bg-[#03071233]">
                             <!-- total price section  -->
                             <div class="ml-8 mr-8 flex justify-between gap-1 mb-4">
                                 <h1 class="font-inter text-xl font-bold text-[#030712]">Total Price</h1>
-                                <h1 class="ml-20 font-inter font-bold text-xl text-[#030712]">BDT 000</h1>
+                                <h1 class="ml-20 font-inter font-bold text-xl text-[#030712]">BDT <span
+                                        id="totalPrice">000</span></h1>
                             </div>
                             <!-- coupon apply -->
-                            <div>
+                            <div id="couponField">
                                 <label
                                     class="input input-bordered border-none mb-6 flex items-center gap-2 rounded-3xl w-[369px] h-[70px] m-6">
-                                    <input type="text" class="grow" placeholder="Have any copupon?" />
-                                    <button
+                                    <input id="cuopon" type="text" class="grow" placeholder="Have any copupon?" />
+                                    <button disabled id="couponApply"
                                         class="btn border-none w-20 h-10 font-inter font-bold text-xl rounded-2xl m-2 bg-[#1DD100] text-white px-4">Apply</button>
-                                    <!-- <span class="badge w-20 h-10 font-inter font-bold text-xl bg-[#1DD100] text-white">Apply</span> -->
                                 </label>
+                            </div>
+                            <!-- coupon applied alert -->
+                            <div hidden id="applied">
+                                <h1 class="ml-2 text-center mb-5 font-raleway font-bold text-xs text-[#1DD100]">Coupon
+                                    Code Applied Succesfully!</h1>
                             </div>
                             <!-- grand total price section  -->
                             <div class="ml-8 mr-8 flex justify-between gap-1 mb-8">
                                 <h1 class="font-inter text-xl font-bold text-[#030712]">Grand Total</h1>
-                                <h1 class="ml-20 font-inter font-bold text-xl text-[#030712]">BDT 000</h1>
+                                <h1 class="ml-20 font-inter font-bold text-xl text-[#030712]">BDT <span
+                                        id="grandPrice">000</span></h1>
                             </div>
                         </div>
                         <!-- passenger section  -->
@@ -490,7 +539,8 @@
                             <h1 class="font-inter text-xl font-bold text-[#030712] mb-4">Phone Number*</h1>
                             <label
                                 class="input input-bordered border-[#0307121A] mb-6 flex items-center gap-2 rounded-3xl w-[410px] h-[64px]">
-                                <input type="text" class="grow" placeholder="Enter your phone number" />
+                                <input id="number" onkeyup="numberFunction()" type="text" class="grow"
+                                    placeholder="Enter your phone number" />
                             </label>
                             <!-- email -->
                             <h1 class="font-inter text-xl font-bold text-[#030712] mb-4">Email ID</h1>
@@ -498,11 +548,13 @@
                                 class="input input-bordered border-[#0307121A] mb-6 flex items-center gap-2 rounded-3xl w-[410px] h-[64px]">
                                 <input type="text" class="grow" placeholder="Enter your email id" />
                             </label>
-                            <!-- The button to open modal -->
-                            <a href="#my_modal_8"
-                                class="btn w-[410px] h-[65px] font-raleway font-bold text-xl rounded-2xl m-2 bg-[#1DD100] text-white px-4 mb-6">Next</a>
-                            <!-- Put this part before </body> tag -->
-                            <div class="modal" role="dialog" id="my_modal_8">
+
+                            <div>
+                                <button id="next" disabled onclick="my_modal_1.showModal()"
+                                    class="btn w-[410px] h-[65px] font-raleway font-bold text-xl rounded-2xl m-2 bg-[#1DD100] text-white px-4 mb-6">Next</button>
+                            </div>
+
+                            <dialog class="modal" id="my_modal_1">
                                 <div class="modal-box w-[718px] h-[510px] bg-[#FFFFFF]">
                                     <img class="mt-14 ml-44 mr-20 mb-10" src="images/success.png" alt="">
                                     <h3 class="font-bold text-lg font-raleway text-[#27AE60] text-center mb-10">SUCCESS
@@ -516,7 +568,7 @@
                                             class="btn w-[300px] h-[56px] bg-[#27AE60] text-white font-raleway font-bold text-xl rounded-3xl align-middle mr-20">Continue</a>
                                     </div>
                                 </div>
-                            </div>
+                            </dialog>
                         </div>
                         <!-- link section  -->
                         <div>
@@ -542,7 +594,8 @@
             <div class="flex justify-between">
                 <div class="mr-72">
                     <h1 class="font-raleway font-bold text-4xl mt-28 text-white">Ruch-Ticket</h1>
-                    <h1 class="w-[400px] mt-4 font-raleway text-xs text-[#FFFFFFCC]">From planning your itinerary to reaching your destination, we ensure a hassle-free experience.
+                    <h1 class="w-[400px] mt-4 font-raleway text-xs text-[#FFFFFFCC]">From planning your itinerary to
+                        reaching your destination, we ensure a hassle-free experience.
                         Trust Ruch Paribahan to take you on unforgettable journeys, leaving you with cherished memories.
                     </h1>
                 </div>
@@ -565,7 +618,9 @@
 
         </footer>
     </footer>
-<script src="scripts/couponcopy.js"></script>
+    <script src="scripts/couponcopy.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/text.js"></script>
 </body>
 
 </html>

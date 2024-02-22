@@ -1,32 +1,9 @@
-// function for buy tickets button 
-function scrollToSection() {
-    // Select the target section
-    const section = document.getElementById('targetSection');
-
-    // Scroll to the section
-    section.scrollIntoView({ behavior: 'smooth' });
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function copyTextToClipboard() {
     // Select the text
-    const textToCopy = document.getElementById('copyText', 'couple');
+    const textToCopy = document.getElementById('copyText');
     const textRange = document.createRange();
     textRange.selectNode(textToCopy);
-    window.getSelection().removeAllRanges(); // Clear previous selections
+    window.getSelection().removeAllRanges();
     window.getSelection().addRange(textRange);
 
     // Copy the selected text to the clipboard
@@ -35,31 +12,30 @@ function copyTextToClipboard() {
     // Deselect the text
     window.getSelection().removeAllRanges();
 
-    // Optionally, provide some feedback to the user
-    alert('Text copied to clipboard!');
+    //feedback to the user
+    alert('Coupon copied to clipboard!');
 }
 
-// Add a click event listener to the text element
-document.getElementById('copyText', 'couple').addEventListener('click', copyTextToClipboard);
+// click event listener to the text element
+document.getElementById('copyText').addEventListener('click', copyTextToClipboard);
 
-// // for couple 20
-// function copyTextToClipboard() {
-//     // Select the text
-//     const textToCopy = document.getElementById('couple');
-//     const textRange = document.createRange();
-//     textRange.selectNode(textToCopy);
-//     window.getSelection().removeAllRanges(); // Clear previous selections
-//     window.getSelection().addRange(textRange);
+// for couple20 coupon
 
-//     // Copy the selected text to the clipboard
-//     document.execCommand('copy');
+function copyTextToClipboard2() {
+    // Select the text
+    const textToCopy = document.getElementById('couple');
+    const textRange = document.createRange();
+    textRange.selectNode(textToCopy);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(textRange);
 
-//     // Deselect the text
-//     window.getSelection().removeAllRanges();
+    // Copy the selected text to the clipboard
+    document.execCommand('copy');
 
-//     // Optionally, provide some feedback to the user
-//     alert('Text copied to clipboard!');
-// }
+    // Deselect the text
+    window.getSelection().removeAllRanges();
 
-// // Add a click event listener to the text element
-// document.getElementById('couple').addEventListener('click', copyTextToClipboard);
+    // feedback to the user
+    alert('Coupon copied to clipboard!');
+}
+document.getElementById('couple').addEventListener('click', copyTextToClipboard2);
