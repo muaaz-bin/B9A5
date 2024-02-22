@@ -76,7 +76,7 @@ function displayInfo(buttonId) {
             document.getElementById('applied').removeAttribute('hidden');
         }
         else {
-            alert("Please enter a valid coupon!");
+           return alert("Please enter a valid coupon!");
         }
     })
 }
